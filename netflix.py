@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 import streamlit as st
 import codecs
 import re
@@ -24,6 +23,12 @@ def cargar_data_director(director):
     data = cargar_data(500)
     filtrar_data_director = data[data['director'] == director]
     return filtrar_data_director
+
+st.header('Integrantes:')
+st.subheader('Irais Aguirre Valente')
+st.subheader('Judith Maldonado Garcia')
+st.subheader('ISW 602')
+st.text('Aplicación web encargada de analizar los dados recopilados del archivo CVS movies.cvs')
 
 sidebar = st.sidebar
 agree = sidebar.checkbox("Mostrar todos los filmes")
